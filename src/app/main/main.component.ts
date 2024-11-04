@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { TableComponent } from '../table/table.component';
+import { StateService } from '../state.service';
 
 @Component({
   selector: 'app-main',
@@ -9,6 +10,8 @@ import { TableComponent } from '../table/table.component';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+  constructor(private stateServie: StateService){}
+  counter = computed(()=>this.stateServie.counter());
   purchaseData = [
     { date: '2024-01-15', customer: 'John Doe', make: 'Toyota', model: 'Camry', price: 24000, quantity: 1, total: 24000 },
     { date: '2024-01-17', customer: 'Jane Smith', make: 'Ford', model: 'Focus', price: 22000, quantity: 1, total: 22000 },

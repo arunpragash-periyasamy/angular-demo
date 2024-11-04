@@ -1,9 +1,10 @@
 <div class="d-flex justify-content-between">
   <div>Infogreen Cloud Solutions</div>
   <div class="d-flex justify-content-around" style="width: 30%">
-    <a routerLink="/">Home</a>
-    <a routerLink="/sales">sales</a>
-    <a routerLink="/home"> purchase </a>
+    <a routerLink="/" (click)="setCounter('main')">Main {{main()}}</a>
+<a routerLink="/sales" (click)="setCounter('sales')">Sales {{sales()}}</a>
+<a routerLink="/home" (click)="setCounter('home')">Home {{home()}}</a>
+
   </div>
 </div>
 <router-outlet />

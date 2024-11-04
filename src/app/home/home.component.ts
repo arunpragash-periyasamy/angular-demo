@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { TableComponent } from '../table/table.component';
+import { StateService } from '../state.service';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ import { TableComponent } from '../table/table.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  constructor(private stateService: StateService){}
+  counter = computed(()=>this.stateService.counter());
    productData = [
     { productId: 'P001', name: 'Air Max', brand: 'Nike', price: 150, stock: 50, category: 'Footwear' },
     { productId: 'P002', name: 'Ultra Boost', brand: 'Adidas', price: 180, stock: 30, category: 'Footwear' },

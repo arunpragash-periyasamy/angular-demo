@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { TableComponent } from '../table/table.component';
-
+import { StateService } from '../state.service';
 @Component({
   selector: 'app-sales',
   standalone: true,
@@ -9,7 +9,8 @@ import { TableComponent } from '../table/table.component';
   styleUrls: ['./sales.component.css']
 })
 export class SalesComponent {
-
+  constructor(private stateService: StateService) {}
+  counter = computed(()=> this.stateService.counter() );
 
   salesData = [
     { saleDate: '2024-03-10', product: 'iPhone 14', brand: 'Apple', price: 999, quantity: 5, totalSales: 4995 },
