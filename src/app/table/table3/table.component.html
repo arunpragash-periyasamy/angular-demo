@@ -1,22 +1,22 @@
 <table class="table table-striped table-bordered table-hover align-middle">
   <thead class="table-dark">
     <tr>
-      <th>Product ID</th>
-      <th>Product Name</th>
-      <th>Brand</th>
-      <th>Price</th>
-      <th>Stock</th>
-      <th>Category</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Bio</th>
+      <th>Homepage</th>
+      <th>Hobbies</th>
+      <th>Location</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let row of rowData">
-     <td>{{row?.productId}}</td>
-     <td>{{row?.name}}</td>
-     <td>{{row?.brand}}</td>
-     <td>{{row?.price}}</td>
-     <td>{{row?.stock}}</td>
-     <td>{{row?.category}}</td>
+     <td>{{row?.username}}</td>
+     <td>{{row?.email}}</td>
+     <td>{{row?.bio}}</td>
+     <td>{{row?.homepage}}</td>
+     <td>{{row?.hobbies.toString()}}</td>
+     <td>{{row?.location}}</td>
     </tr>
   </tbody>
 </table>
