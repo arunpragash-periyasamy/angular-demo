@@ -6,10 +6,12 @@ import { TableComponent } from '../table/table.component';
   standalone: true,
   imports: [TableComponent],
   templateUrl: './sales.component.html',
-  styleUrl: './sales.component.css'
+  styleUrls: ['./sales.component.css']
 })
 export class SalesComponent {
-   salesData = [
+
+
+  salesData = [
     { saleDate: '2024-03-10', product: 'iPhone 14', brand: 'Apple', price: 999, quantity: 5, totalSales: 4995 },
     { saleDate: '2024-03-11', product: 'Galaxy S22', brand: 'Samsung', price: 799, quantity: 3, totalSales: 2397 },
     { saleDate: '2024-03-12', product: 'Pixel 6', brand: 'Google', price: 599, quantity: 4, totalSales: 2396 },
@@ -30,13 +32,6 @@ export class SalesComponent {
     { saleDate: '2024-04-20', product: 'Axon 20', brand: 'ZTE', price: 549, quantity: 2, totalSales: 1098 },
     { saleDate: '2024-04-22', product: 'FP3', brand: 'Fairphone', price: 449, quantity: 3, totalSales: 1347 },
     { saleDate: '2024-04-25', product: 'Phone', brand: 'Essential', price: 699, quantity: 1, totalSales: 699 }
-];
-salesColDefs = [
-  { headerName: 'Sale Date', field: 'saleDate', filter: 'agDateColumnFilter', resizable: true },
-  { headerName: 'Product', field: 'product', resizable: true },
-  { headerName: 'Brand', field: 'brand', suppressMovable: true},
-  { headerName: 'Price', field: 'price', suppressMovable: true},
-  { headerName: 'Quantity Sold', field: 'quantity'},
-  { headerName: 'Total Sales', field: 'totalSales',  resizable: true }
-];
+  ];
+  designType: string = 'table1'; 
 }

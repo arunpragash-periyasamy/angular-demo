@@ -31,12 +31,7 @@ export class HomeComponent {
     { productId: 'P019', name: 'Hedgehog', brand: 'North Face', price: 130, stock: 35, category: 'Footwear' },
     { productId: 'P020', name: 'Beta AR', brand: 'Arc’teryx', price: 450, stock: 5, category: 'Apparel' }
 ];
-productColDefs = [
-  { headerName: 'Product ID', field: 'productId', filter: true, resizable: true },
-  { headerName: 'Product Name', field: 'name', filter: true, resizable: true },
-  { headerName: 'Brand', field: 'brand', filter: true, resizable: true },
-  { headerName: 'Price', field: 'price', filter: 'agNumberColumnFilter', resizable: true },
-  { headerName: 'Stock', field: 'stock', filter: 'agNumberColumnFilter', resizable: true },
-  { headerName: 'Category', field: 'category', filter: true, resizable: true }
-];
+
+
+designType: string = 'table3'; 
 }

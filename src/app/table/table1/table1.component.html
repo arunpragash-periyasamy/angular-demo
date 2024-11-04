@@ -1,0 +1,22 @@
+<table class="table table-striped table-bordered table-hover align-middle">
+  <thead class="table-dark">
+    <tr>
+      <th>Sale Date</th>
+      <th>Product info </th>
+      <th>Brand</th>
+      <th>Price</th>
+      <th>Quantity Sold</th>
+      <th>Total Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rowData">
+     <td>{{row?.saleDate}}</td>
+     <td>{{row?.product}}</td>
+     <td>{{row?.brand}}</td>
+     <td>{{row?.price}}</td>
+     <td>{{row?.quality}}</td>
+     <td>{{row?.totalSales}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -31,14 +31,7 @@ export class MainComponent {
     { date: '2024-03-05', customer: 'Charlotte Green', make: 'Acura', model: 'TLX', price: 39000, quantity: 1, total: 39000 },
     { date: '2024-03-07', customer: 'Elijah Adams', make: 'Lincoln', model: 'MKZ', price: 42000, quantity: 1, total: 42000 }
 ];
- purchaseColDefs = [
-  { headerName: 'Date', field: 'date', filter: 'agDateColumnFilter', resizable: true },
-  { headerName: 'Customer Name', field: 'customer', filter: true, resizable: true },
-  { headerName: 'Make', field: 'make', filter: true, resizable: true },
-  { headerName: 'Model', field: 'model', filter: true, resizable: true },
-  { headerName: 'Price', field: 'price', filter: 'agNumberColumnFilter', resizable: true },
-  { headerName: 'Quantity', field: 'quantity', filter: 'agNumberColumnFilter', resizable: true },
-  { headerName: 'Total', field: 'total', filter: 'agNumberColumnFilter', resizable: true }
-];
+ 
 
+designType: string = 'table2'; 
 }

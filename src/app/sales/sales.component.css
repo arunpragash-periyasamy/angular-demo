@@ -1,0 +1,9 @@
+.ag-theme-custom .ag-header {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow; /* Highlight color for filtered rows */
+  }
