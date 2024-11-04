@@ -1,13 +1,9 @@
 <div class="d-flex justify-content-between">
-  <div>
-    Infogreen Cloud Solutions
-  </div>
-  <div class="d-flex justify-content-around" style="width: 30%;">
-      <a routerLink="/">Home</a>
-      <a routerLink="/table">
-        Table
-      </a>
+  <div>Infogreen Cloud Solutions</div>
+  <div class="d-flex justify-content-around" style="width: 30%">
+    <a routerLink="/">Home</a>
+    <a routerLink="/sales">sales</a>
+    <a routerLink="/home"> purchase </a>
   </div>
 </div>
-<app-table [rowData]="tableData"  [columnDefs]="columnDefinitions"></app-table>
-<router-outlet/>
+<router-outlet />

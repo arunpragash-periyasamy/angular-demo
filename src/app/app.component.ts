@@ -21,7 +21,7 @@ export class AppComponent {
     { make: 'BMW', model: 'X5', price: 75000 }
   ];
   columnDefinitions: ColDef[] = [
-    { headerName: 'Making', field: 'make' },
+    { headerName: 'Making', field: 'make', filter: true, resizable: false},
     { headerName: 'Model', field: 'model' },
     { headerName: 'Price', field: 'price' }
   ];
